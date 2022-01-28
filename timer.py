@@ -1,8 +1,8 @@
-# import the time & playsound module
+# importa los módulos time y playsound
 import time
 from playsound import playsound 
   
-# define the countdown timer function
+# define la función countdown timer 
 def countdown_timer(seconds):
     
     while seconds > 0:       
@@ -16,13 +16,13 @@ def countdown_timer(seconds):
         
         seconds -= 1
       
-    print('Time Up!')
+    print('¡Se acabó el tiempo!')
 
     playsound('mixkit-sound.wav')
   
   
-# input time in seconds
-seconds = input("Enter the time in number of seconds: ")
+# tiempo del input en segunods
+seconds = input("Ingresa el tiempo en segundos: ")
   
-# function call
+# llamar a la función
 countdown_timer(int(seconds))
